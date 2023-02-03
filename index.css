@@ -255,6 +255,36 @@ section.full-screen {
   height: 100%;
 }
 
+.gallery {
+  margin: 2em;
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 1fr) 1.5fr;
+  grid-gap: 20px;
+
+  grid-template-areas: "img1a img1a img1a img2a" "img3a img3a img3a img2a" "img4a img4a img4a img4a";
+}
+
+.image1a {
+  grid-area: img1a;
+  text-align: center;
+}
+
+.image2a {
+  grid-area: img2a;
+  text-align: center;
+}
+
+.image3a {
+  grid-area: img3a;
+  text-align: center;
+}
+
+.image4a {
+  grid-area: img4a;
+  text-align: center;
+}
+
 .mobile {
   display: none;
 }
